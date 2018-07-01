@@ -66,7 +66,9 @@ public class JTableVBAppPaneel extends JPanel {
 		scrollVenster.setHorizontalScrollBar(new JScrollBar());
 		tabel.setFillsViewportHeight(true);
 		add(scrollVenster, BorderLayout.CENTER);
-		add(knop2, BorderLayout.NORTH);
+		add(knop, BorderLayout.NORTH);
+		add(knop2, BorderLayout.EAST);
+		add(knop3, BorderLayout.WEST);
 		add(uitvoerVak, BorderLayout.SOUTH);
 	}
 
@@ -74,6 +76,7 @@ public class JTableVBAppPaneel extends JPanel {
 		public void actionPerformed(ActionEvent e) {
 			int[] getallen = new int[100000];
 			int teller = 0;
+			long t4 = new Date().getTime();
 			// begin met ongesorteerd array
 			for (int i = 0; i < 10000; i++) {
 				for (int kollomen = 0; kollomen < 10; kollomen++) {
@@ -86,7 +89,6 @@ public class JTableVBAppPaneel extends JPanel {
 				System.out.println(getallen[t]);
 			}
 
-			long t4 = new Date().getTime();
 			Arrays.sort(getallen);
 			long t5 = new Date().getTime();
 			uitvoerVak.setText("Tijd = " + (t5 - t4) + " ms");
@@ -105,6 +107,7 @@ public class JTableVBAppPaneel extends JPanel {
 		public void actionPerformed(ActionEvent e) {
 			int[] getallen = new int[100000];
 			int teller = 0;
+			long t4 = new Date().getTime();
 			// begin met ongesorteerd array
 			for (int i = 0; i < 10000; i++) {
 				for (int kollomen = 0; kollomen < 10; kollomen++) {
@@ -125,7 +128,6 @@ public class JTableVBAppPaneel extends JPanel {
 				}
 			}
 
-			long t4 = new Date().getTime();
 			Arrays.sort(getallen);
 			long t5 = new Date().getTime();
 			uitvoerVak.setText("Tijd = " + (t5 - t4) + " ms");
@@ -145,6 +147,7 @@ public class JTableVBAppPaneel extends JPanel {
 			int[] getallen = new int[100000];
 			int low = 0;
 			int high = getallen.length - 1;
+			long t4 = new Date().getTime();
 
 			if (getallen == null || getallen.length == 0) {
 				return;
@@ -176,7 +179,6 @@ public class JTableVBAppPaneel extends JPanel {
 				}
 			}
 
-			long t4 = new Date().getTime();
 			Arrays.sort(getallen);
 			long t5 = new Date().getTime();
 			uitvoerVak.setText("Tijd = " + (t5 - t4) + " ms");
