@@ -1,0 +1,3 @@
+"C:\\Users\\Dell\\Dropbox\\En dan is er ... Java 4\\Gereed\\UitwerkingenOefeningen\\H07\\Oefening0706\\src\\Artikel.java"
+"C:\\Users\\Dell\\Dropbox\\En dan is er ... Java 4\\Gereed\\UitwerkingenOefeningen\\H07\\Oefening0706\\src\\Oefening0706.java"
+"C:\\Users\\Dell\\Dropbox\\En dan is er ... Java 4\\Gereed\\UitwerkingenOefeningen\\H07\\Oefening0706\\src\\Voorraad.java"
